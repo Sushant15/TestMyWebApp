@@ -8,7 +8,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Handle button click
-document.getElementById('locate-btn').addEventListener('click', function () {
+document.getElementById('fml-button').addEventListener('click', function () {
     map.locate({ setView: true, maxZoom: 17 });
 });
 
@@ -26,4 +26,5 @@ map.on('locationerror', function (e) {
 });
 
 // var marker = L.marker([28.65, 77.23]).addTo(map);
+
 
