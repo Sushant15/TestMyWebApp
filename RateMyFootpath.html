@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Rate My Footpath</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+	</head>
+
+	<body>
+
+		<div id="action-area">
+
+			<div id="location-area">
+
+				<button id="fml-button">Find My Location</button>
+			</br></br>
+				<textarea id="pinned-location">The current Location</textarea>
+
+			</div>
+
+			<div id="issue-list-container">
+
+				<h3>Select Issues<h3>
+					<div id="issue-list">
+
+						<label class="issue"><input type="checkbox" value="broken_footpath">Broken footpath</label><br>
+						<label class="issue"><input type="checkbox" value="waterlogging">Waterlogging</label><br>
+						<label class="issue"><input type="checkbox" value="potholes">Potholes on footpath</label><br>
+						<label class="issue"><input type="checkbox" value="street_vendors">Street vendors blocking path</label><br>
+						<label class="issue"><input type="checkbox" value="construction_material">Construction material on path</label><br>
+						<label class="issue"><input type="checkbox" value="garbage_dumped">Garbage dumped on footpath</label><br>
+						<label class="issue"><input type="checkbox" value="vehicles_parked">Parked motorcycles/cars on footpath</label><br>
+						<label class="issue"><input type="checkbox" value="poles_signboards">Poles or signboards blocking path</label><br>
+						<label class="issue"><input type="checkbox" value="barricades">Barricades/fencing obstacles</label><br>
+						<label class="issue"><input type="checkbox" value="animals_blocking">Animals blocking path</label><br>
+						<label class="issue"><input type="checkbox" value="overgrown_plants">Overgrown plants blocking path</label><br>
+						<label class="issue"><input type="checkbox" value="no_streetlights">No streetlights</label><br>
+						<label class="issue"><input type="checkbox" value="wheelchair_ramp">No / damaged wheelchair ramp</label><br>
+						<label class="issue"><input type="checkbox" value="tactile_tiles">No / blocked tactile tiles</label><br>
+						<label class="issue"><input type="checkbox" value="narrow_walkway">Narrow walkway</label><br>
+						<label class="issue"><input type="checkbox" value="footpath_ends">Footpath ends abruptly</label><br>
+						<label class="issue"><input type="checkbox" value="no_zebra_crossing">No zebra crossing at the end</label><br>
+						<label class="issue"><input type="checkbox" value="vehicles_entering">Vehicles entering footpath</label><br>
+						<label class="issue"><input type="checkbox" value="no_ped_signal">No pedestrian signal</label><br>
+						<label class="issue"><input type="checkbox" value="unsafe_night">Unsafe at night</label><br>
+						<label class="issue"><input type="checkbox" value="exposed_wires">Exposed electrical wires</label><br>
+
+					</div>
+
+					<div id="sub-issues-container"></div>
+
+				</br>
+
+					<button id="submit-button">Submit</button>
+
+			</div>
+
+		</div>
+
+		<map id="map-area">
+
+			<div id="map"></div>
+
+		</map>
+
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+		<script src="js/main.js"></script>
+		<script src="js/issuelist.js"></script>
+
+	</body>
+</html>
